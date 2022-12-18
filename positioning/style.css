@@ -1,0 +1,53 @@
+.header {
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 1;
+}
+
+.sidebar {
+    background-color: green;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 50px;
+    width: 72px;
+}
+
+.absolute {
+    position: absolute;
+    background-color: red;
+    color: white;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+}
+
+.div-1 {
+    background-color: lightblue;
+    height: 200px;
+    width: 200px;
+    position: static;
+}
+
+.div-2 {
+    background-color: lightpink;
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+.absolute-1 {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    top: 170px;
+    right: 10px;
+    z-index: 2;
+    border-radius: 4px;
+}
