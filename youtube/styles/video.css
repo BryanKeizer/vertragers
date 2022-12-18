@@ -1,5 +1,7 @@
 .thumbnail {
   width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
 }
 
 .video-title {
@@ -21,7 +23,7 @@
 }
 
 .thumbnail-row {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   position: relative;
 }
 
@@ -38,10 +40,37 @@
 .video-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 16px;
+  column-gap: 26px;
   row-gap: 40px;
-  
+  border: 2px solid rgb(233, 228, 228);
+  border-bottom: none;
+  border-right: none;
 }
+
+.video-title:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .video-grid {
+  grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
 
 .video-time {
   background-color: black;
@@ -53,8 +82,5 @@
   font-family: roboto, arial;
   font-size: 12px;
   font-weight: 500;
-  padding-left: 2px;
-  padding-right: 2px;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding: 2px 4px;
 }
